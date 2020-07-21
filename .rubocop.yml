@@ -1,0 +1,158 @@
+AllCops:
+  TargetRubyVersion: 2.6
+  Exclude:
+    - bin/*
+    - Gemfile
+    - vendor/**/*
+    - shell_command.gemspec
+
+inherit_from:
+  .rubocop.base.yml
+
+Lint/RescueException:
+  Enabled: false
+
+Style/RescueStandardError:
+  Enabled: false
+
+Lint/AssignmentInCondition:
+  Enabled: false
+
+Lint/SuppressedException:
+  Enabled: false
+
+Layout/EndAlignment:
+  Enabled: false
+
+Style/DoubleNegation:
+  Enabled: false
+
+Style/Next:
+  Enabled: false
+
+Style/EmptyMethod:
+  Enabled: false
+
+Layout/LineLength:
+  Exclude:
+    - config/routes.rb
+    - test/**/*
+    - lib/tasks/teams.rake
+  Max: 120
+
+Metrics/BlockLength:
+  Enabled: false
+
+Metrics/MethodLength:
+  Enabled: false
+
+Metrics/ClassLength:
+  Enabled: false
+
+Metrics/ModuleLength:
+  Enabled: false
+
+Metrics/AbcSize:
+  Max: 35
+
+Metrics/CyclomaticComplexity:
+  Max: 10
+
+Metrics/PerceivedComplexity:
+  Max: 10
+
+Style/Documentation:
+  Enabled: false
+
+Style/SingleLineBlockParams:
+  Enabled: false
+
+Style/SignalException:
+  Enabled: false
+
+Style/RaiseArgs:
+  Enabled: false
+
+Style/ModuleFunction:
+  Enabled: false
+
+Style/RedundantReturn:
+  AllowMultipleReturnValues: true
+
+Style/TrailingCommaInArguments:
+  EnforcedStyleForMultiline: comma
+
+Style/TrailingCommaInArrayLiteral:
+  EnforcedStyleForMultiline: comma
+
+Style/TrailingCommaInHashLiteral:
+  EnforcedStyleForMultiline: comma
+
+Style/ClassAndModuleChildren:
+  Enabled: false
+
+Naming/PredicateName:
+  Exclude:
+    - app/serializers/**/*
+
+Style/StringLiterals:
+  Enabled: false
+
+Style/PerlBackrefs:
+  Enabled: false
+
+Style/TrivialAccessors:
+  AllowPredicates: true
+
+Style/GuardClause:
+  Enabled: false
+
+Style/RedundantPercentQ:
+  Enabled: false
+
+Style/Alias:
+  Enabled: false
+
+Layout/SpaceInsideHashLiteralBraces:
+  EnforcedStyle: no_space
+
+Layout/MultilineHashBraceLayout:
+  Enabled: false
+
+Layout/IndentationWidth:
+  Enabled: false # totally broken
+
+Layout/IndentationConsistency:
+  Enabled: false # broken too
+  EnforcedStyle: indented_internal_methods
+
+Layout/FirstHashElementIndentation:
+  Enabled: false
+
+Layout/FirstArrayElementIndentation:
+  Enabled: false # broken
+
+Layout/ElseAlignment:
+  Enabled: false # broken
+
+Style/ParallelAssignment:
+  Enabled: false
+
+Style/IfUnlessModifier:
+  Enabled: false
+
+Performance/Casecmp:
+  Enabled: false # ugly
+
+Style/PercentLiteralDelimiters:
+  PreferredDelimiters:
+    '%i': '()'
+    '%I': '()'
+    '%w': '()'
+    '%W': '()'
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Style/FormatStringToken:
+  Enabled: false
