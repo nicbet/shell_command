@@ -1,6 +1,6 @@
-# ShellCommand
+# Ruby Gem `shell_command`
 
-ShellCommand allows execution of system commands with streaming I/O, timeouts, and environemnt variable interpolation.
+The `shell_command` Ruby gem allows execution of system commands with streaming I/O, timeouts, and environment variable interpolation.
 
 ## Installation
 
